@@ -1,6 +1,6 @@
 # radar-pautas
 
-[![radar-pautas — today's 6 AI stories](guia/assets/banner-en.jpg)](https://inematds.github.io/radar-pautas/guia/en/)
+[![radar-pautas — today's 6 AI stories](guia/assets/banner-en.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/en/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 English · 🇪🇸 [Español](README.es.md)**
 
@@ -10,12 +10,12 @@ radar-pautas is a script that reads about 20 artificial intelligence news sites 
 
 ## 📖 User guide
 
-Full guide (landing + step by step): **https://inematds.github.io/radar-pautas/guia/en/**
+Full guide (landing + step by step): **https://linnoff88-dev.github.io/arckhe-/guia/en/**
 
 ## Use
 
 ```bash
-git clone https://github.com/inematds/radar-pautas ~/projetos/radar-pautas
+git clone https://github.com/linnoff88-dev/radar-pautas ~/projetos/radar-pautas
 cd ~/projetos/radar-pautas
 python3 radar.py --dry          # olhar as 6 pautas sem gravar
 python3 radar.py --angulos      # gravar + manchete/gancho/formato em PT (Claude Code)

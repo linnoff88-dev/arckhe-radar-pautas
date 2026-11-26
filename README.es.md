@@ -1,6 +1,6 @@
 # radar-pautas
 
-[![radar-pautas — las 6 pautas de IA del día](guia/assets/banner-es.jpg)](https://inematds.github.io/radar-pautas/guia/es/)
+[![radar-pautas — las 6 pautas de IA del día](guia/assets/banner-es.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/es/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 Español**
 
@@ -10,12 +10,12 @@ radar-pautas es un script que lee, de una sola vez, unos 20 sitios de noticias s
 
 ## 📖 Guía de uso
 
-Guía completa (landing + paso a paso): **https://inematds.github.io/radar-pautas/guia/es/**
+Guía completa (landing + paso a paso): **https://linnoff88-dev.github.io/arckhe-/guia/es/**
 
 ## Usar
 
 ```bash
-git clone https://github.com/inematds/radar-pautas ~/projetos/radar-pautas
+git clone https://github.com/linnoff88-dev/radar-pautas ~/projetos/radar-pautas
 cd ~/projetos/radar-pautas
 python3 radar.py --dry          # ver los 6 temas sin guardar
 python3 radar.py --angulos      # guardar + titular/gancho/formato en PT (Claude Code)

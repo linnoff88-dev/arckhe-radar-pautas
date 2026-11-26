@@ -1,6 +1,6 @@
 # CLAUDE.md — radar-pautas
 
-- Repo `inematds/radar-pautas`; autor `inematds <inematds@gmail.com>`. Uso: `SKILL.md`. Processo: README.
+- Repo `linnoff88-dev/radar-pautas`; autor `linnoff88-dev <linnoff88-dev@gmail.com>`. Uso: `SKILL.md`. Processo: README.
 - Só RSS público e `gh`. Nenhuma API com chave. Ângulo pelo `claude -p` (assinatura, sem ANTHROPIC_API_KEY).
 - Timer diário vem desligado: ligar só com OK do Nei.
 - Mudou o fluxo → atualizar a tabela "O processo, do início ao fim" do README no mesmo commit.

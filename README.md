@@ -6,7 +6,7 @@
 </div>
 
 
-[![radar-pautas ê¢â¬â as 6 pautas de IA do dia](guia/assets/banner.jpg)](https://inematds.github.io/radar-pautas/guia/)
+[![radar-pautas ê¢â¬â as 6 pautas de IA do dia](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/)
 
 **ê°Å¸â¡Â§ê°Å¸â¡Â· PortuguêÂªs êÂ· ê°Å¸â¡Âºê°Å¸â¡Â¸ [English](README.en.md) êÂ· ê°Å¸â¡Âªê°Å¸â¡Â¸ [EspaêÂ±ol](README.es.md)**
 
@@ -16,12 +16,12 @@ O radar-pautas êÂ© um script que lêÂª, de uma vez, cerca de 20 sites d
 
 ## ê°Å¸ââ Guia de uso
 
-Guia completo (landing + passo a passo): **https://inematds.github.io/radar-pautas/guia/**
+Guia completo (landing + passo a passo): **https://linnoff88-dev.github.io/arckhe-/guia/**
 
 ## Usar
 
 ```bash
-git clone https://github.com/inematds/radar-pautas ~/projetos/radar-pautas
+git clone https://github.com/linnoff88-dev/radar-pautas ~/projetos/radar-pautas
 cd ~/projetos/radar-pautas
 python3 radar.py --dry          # olhar as 6 pautas sem gravar
 python3 radar.py --angulos      # gravar + manchete/gancho/formato em PT (Claude Code)

@@ -22,7 +22,7 @@ Saída: `~/projetos/output/radar-pautas/<data>/pautas.md`, `pautas.json`, `radar
 
 ## Depois do radar
 - Mostre ao Nei as 6 pautas (manchete PT, por que importa, link) e pergunte quais viram vídeo. **Nada é produzido sem ele escolher.**
-- Pauta escolhida → r7ex / explicavideo / carrossel-inema, com o link do radar como fonte de fatos (abrir e ler a fonte antes de escrever qualquer número).
+- Pauta escolhida → r7ex / explicavideo / carrossel-ARCKHÉ, com o link do radar como fonte de fatos (abrir e ler a fonte antes de escrever qualquer número).
 
 ## Regras
 - Só páginas públicas (RSS) e GitHub pelo `gh`. Nenhuma chave de API.

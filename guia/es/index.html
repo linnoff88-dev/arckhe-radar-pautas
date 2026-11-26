@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>radar-pautas — los 6 temas de IA del día, con fuentes verificadas</title>
 <meta name="description" content="Script en Python que lee 20 sitios de noticias sobre IA y las tendencias de GitHub, reúne las noticias repetidas, les asigna una puntuación, verifica que los enlaces abran y devuelve los 6 temas del día, con titular y gancho en portugués.">
-<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/radar-pautas/guia/">
-<link rel="alternate" hreflang="en" href="https://inematds.github.io/radar-pautas/guia/en/">
-<link rel="alternate" hreflang="es" href="https://inematds.github.io/radar-pautas/guia/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://linnoff88-dev.github.io/arckhe-/guia/">
+<link rel="alternate" hreflang="en" href="https://linnoff88-dev.github.io/arckhe-/guia/en/">
+<link rel="alternate" hreflang="es" href="https://linnoff88-dev.github.io/arckhe-/guia/es/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -42,8 +42,8 @@
   nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
   nav .brand .emoji{font-size:1.25rem}
   nav .sep{color:var(--mut);opacity:.45}
-  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
-  nav .inema:hover{filter:brightness(1.15)}
+  nav .ARCKHÉ{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .ARCKHÉ:hover{filter:brightness(1.15)}
   nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
   nav .pro:hover{filter:brightness(1.15)}
   nav .clubpro{display:inline-flex;align-items:center;gap:6px}
@@ -115,9 +115,9 @@
   <a class="brand" href="#top"><span class="emoji">📡</span> radar-pautas</a>
   <span class="sep">|</span>
   <span class="clubpro">
-    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <a class="ARCKHÉ" href="https://ARCKHÉ AI" target="_blank" rel="noopener">ARCKHÉ AI</a>
     <span class="sep">-</span>
-    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+    <a class="pro" href="https://ARCKHÉ.pro" target="_blank" rel="noopener">PRO</a>
   </span>
   <div class="links">
     <a class="sec" href="#oque">Qué es</a>
@@ -127,7 +127,7 @@
     <a class="sec" href="#roadmap">Límites</a>
     <span class="lang"><a href="../">PT</a><a href="../en/">EN</a><a class="on" href="./">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
-    <a class="btn" href="https://github.com/inematds/radar-pautas" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://github.com/linnoff88-dev/radar-pautas" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
 
@@ -140,7 +140,7 @@
       <p class="lead">Un comando lee 20 fuentes (blogs de empresas, prensa y foros) y las tendencias de GitHub, y muestra lo más relevante del momento. Cada tema incluye un enlace que abre y, si lo pides, un titular y un gancho en portugués.</p>
       <div class="cta">
         <a class="btn" href="#guia">Empezar la guía</a>
-        <a class="btn ghost" href="https://github.com/inematds/radar-pautas" target="_blank" rel="noopener">Ver en GitHub</a>
+        <a class="btn ghost" href="https://github.com/linnoff88-dev/radar-pautas" target="_blank" rel="noopener">Ver en GitHub</a>
       </div>
     </div>
     <figure><img src="../assets/banner-es.jpg" alt="Banner de radar-pautas: los 6 temas de IA del día, con fuentes verificadas"></figure>
@@ -205,7 +205,7 @@
   <div class="step"><div class="b">1</div><div>
     <h3>Descarga el proyecto</h3>
     <p>Copia radar en la carpeta <code>~/projetos/radar-pautas</code> (<code>~</code> es tu carpeta personal) y entra en ella.</p>
-<pre><span class="k">git clone</span> <span class="s">https://github.com/inematds/radar-pautas</span> ~/projetos/radar-pautas
+<pre><span class="k">git clone</span> <span class="s">https://github.com/linnoff88-dev/radar-pautas</span> ~/projetos/radar-pautas
 <span class="k">cd</span> ~/projetos/radar-pautas</pre>
   </div></div>
 
@@ -220,7 +220,7 @@
 
   <div class="step"><div class="b">3</div><div>
     <h3>Guarda los temas con el enfoque en portugués</h3>
-    <p>Sin <code>--dry</code>, el radar guarda los archivos. Con <code>--angulos</code>, cada tema recibe un titular, «por qué importa», un gancho (la frase inicial de un video corto), un formato sugerido y una palabra para pedir en los comentarios. INEMA usa estos formatos: <b>r7ex</b> (reel vertical corto), <b>explicavideo</b> (video explicativo) y <b>carrossel</b> (publicación con varias imágenes). Sin Claude Code, el radar muestra <code>aviso: ângulos nêo gerados</code> y guarda los temas sin el enfoque. Si los temas aparecen sin un titular en portugués, abre Claude Code una vez (con el comando <code>claude</code>) para iniciar sesión y vuelve a ejecutar el comando.</p>
+    <p>Sin <code>--dry</code>, el radar guarda los archivos. Con <code>--angulos</code>, cada tema recibe un titular, «por qué importa», un gancho (la frase inicial de un video corto), un formato sugerido y una palabra para pedir en los comentarios. ARCKHÉ usa estos formatos: <b>r7ex</b> (reel vertical corto), <b>explicavideo</b> (video explicativo) y <b>carrossel</b> (publicación con varias imágenes). Sin Claude Code, el radar muestra <code>aviso: ângulos nêo gerados</code> y guarda los temas sin el enfoque. Si los temas aparecen sin un titular en portugués, abre Claude Code una vez (con el comando <code>claude</code>) para iniciar sesión y vuelve a ejecutar el comando.</p>
 <pre><span class="k">python3</span> radar.py --angulos</pre>
     <p>Si aparecen menos de 3 temas (la red está caída o es un día flojo), el comando termina con un error; vuelve a ejecutarlo más tarde o amplía el período con <code>--horas 48</code>.</p>
   </div></div>
@@ -256,7 +256,7 @@
 
   <div class="step"><div class="b">7</div><div>
     <h3>Aviso de «ya lo hicimos» (opcional)</h3>
-    <p>El radar busca en las últimas 200 líneas de un archivo de producciones una línea que mencione la misma empresa y al menos 2 palabras del título. Si la encuentra, el tema recibe el aviso «Ya hicimos algo parecido». La ruta está definida en el código como <code>~/projetos/wifi/PRODUCOES-VIDEO.md</code>, el archivo de INEMA. Si no existe en tu computadora, el aviso simplemente no aparece. Para usar el tuyo, cambia la ruta en la línea que empieza con <code>PRODUCOES =</code> en <code>radar.py</code> y escribe una línea por cada video publicado. Solo cuenta las palabras de 6 letras o más; se ignoran las palabras genéricas (agent, model, skill, claude, openai, google, release). Por eso, incluye el nombre de la empresa y las palabras clave del título original de la noticia (casi siempre en inglés), como en el ejemplo, que activa el aviso para el tema 1 del ejemplo de abajo.</p>
+    <p>El radar busca en las últimas 200 líneas de un archivo de producciones una línea que mencione la misma empresa y al menos 2 palabras del título. Si la encuentra, el tema recibe el aviso «Ya hicimos algo parecido». La ruta está definida en el código como <code>~/projetos/wifi/PRODUCOES-VIDEO.md</code>, el archivo de ARCKHÉ. Si no existe en tu computadora, el aviso simplemente no aparece. Para usar el tuyo, cambia la ruta en la línea que empieza con <code>PRODUCOES =</code> en <code>radar.py</code> y escribe una línea por cada video publicado. Solo cuenta las palabras de 6 letras o más; se ignoran las palabras genéricas (agent, model, skill, claude, openai, google, release). Por eso, incluye el nombre de la empresa y las palabras clave del título original de la noticia (casi siempre en inglés), como en el ejemplo, que activa el aviso para el tema 1 del ejemplo de abajo.</p>
 <pre><span class="c"># ejemplo de línea en el archivo de producciones</span>
 04/11 · DeepSeek super-agent design autonomous · explicavideo publicado</pre>
 <pre><span class="k">grep</span> -n <span class="s">"^PRODUCOES ="</span> radar.py</pre>
@@ -324,8 +324,8 @@
   <div class="wrap">
     <div class="pill">Python 3 (sin dependencias)</div><div class="pill">RSS público</div><div class="pill">GitHub CLI</div><div class="pill">Claude Code (opcional)</div>
     <p style="margin-top:18px">radar-pautas · código MIT ·
-      <a href="https://github.com/inematds/radar-pautas">inematds/radar-pautas</a> ·
-      <a href="https://inema.club">INEMA.CLUB</a></p>
+      <a href="https://github.com/linnoff88-dev/radar-pautas">linnoff88-dev/radar-pautas</a> ·
+      <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
   </div>
 </footer>
 

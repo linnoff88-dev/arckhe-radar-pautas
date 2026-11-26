@@ -26,7 +26,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent
-UA = {"User-Agent": "Mozilla/5.0 (radar-pautas; +https://github.com/inematds/radar-pautas)"}
+UA = {"User-Agent": "Mozilla/5.0 (radar-pautas; +https://github.com/linnoff88-dev/radar-pautas)"}
 PRODUCOES = Path.home() / "projetos/wifi/PRODUCOES-VIDEO.md"
 SAIDA = Path(os.environ.get("RADAR_SAIDA", Path.home() / "projetos/output/radar-pautas"))
 PARADAS = set("""a o as os de da do das dos e em no na nos nas um uma uns umas para por com sem que se ao à é the a an of to in on for and or with by from at is are was be as it its this that new how why what you your
@@ -189,7 +189,7 @@ def link_ok(url):
 # ---------- ângulo (opcional, claude -p pela assinatura) ----------
 def angulos(pautas):
     lista = "\n".join(f"{k}. {p['titulo']} | fontes: {', '.join(p['fontes'])} | {p['resumo'][:240]}" for k, p in enumerate(pautas, 1))
-    pedido = f"""Você é o pauteiro do INEMA (canal brasileiro que ensina IA na prática, de graça, para gente comum, sem hype).
+    pedido = f"""Você é o pauteiro do ARCKHÉ (canal brasileiro que ensina IA na prática, de graça, para gente comum, sem hype).
 Para cada pauta abaixo, responda em português do Brasil. Use SÓ o que está na pauta; nêo invente número nem fato.
 Devolva APENAS um JSON (lista, mesma ordem) com objetos:
 {{"titulo_pt": "manchete em PT, até 70 caracteres", "por_que_importa": "1 frase para quem nêo é técnico",

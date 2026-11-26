@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>radar-pautas — today’s 6 AI stories to cover, with verified sources</title>
 <meta name="description" content="A Python script that reads 20 AI news sites and trending GitHub projects, groups duplicate stories, scores them, checks that each link works, and returns the 6 stories to cover today, with a headline and hook in Portuguese.">
-<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/radar-pautas/guia/">
-<link rel="alternate" hreflang="en" href="https://inematds.github.io/radar-pautas/guia/en/">
-<link rel="alternate" hreflang="es" href="https://inematds.github.io/radar-pautas/guia/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://linnoff88-dev.github.io/arckhe-/guia/">
+<link rel="alternate" hreflang="en" href="https://linnoff88-dev.github.io/arckhe-/guia/en/">
+<link rel="alternate" hreflang="es" href="https://linnoff88-dev.github.io/arckhe-/guia/es/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -42,8 +42,8 @@
   nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
   nav .brand .emoji{font-size:1.25rem}
   nav .sep{color:var(--mut);opacity:.45}
-  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
-  nav .inema:hover{filter:brightness(1.15)}
+  nav .ARCKHÉ{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .ARCKHÉ:hover{filter:brightness(1.15)}
   nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
   nav .pro:hover{filter:brightness(1.15)}
   nav .clubpro{display:inline-flex;align-items:center;gap:6px}
@@ -115,9 +115,9 @@
   <a class="brand" href="#top"><span class="emoji">📡</span> radar-pautas</a>
   <span class="sep">|</span>
   <span class="clubpro">
-    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <a class="ARCKHÉ" href="https://ARCKHÉ AI" target="_blank" rel="noopener">ARCKHÉ AI</a>
     <span class="sep">-</span>
-    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+    <a class="pro" href="https://ARCKHÉ.pro" target="_blank" rel="noopener">PRO</a>
   </span>
   <div class="links">
     <a class="sec" href="#oque">What it is</a>
@@ -127,7 +127,7 @@
     <a class="sec" href="#roadmap">Limits</a>
     <span class="lang"><a href="../">PT</a><a class="on" href="./">EN</a><a href="../es/">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
-    <a class="btn" href="https://github.com/inematds/radar-pautas" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://github.com/linnoff88-dev/radar-pautas" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
 
@@ -140,7 +140,7 @@
       <p class="lead">One command reads 20 sources (company blogs, news sites, and forums) plus trending GitHub projects, then shows what’s hot right now. Each story has a working link and, if you ask, a headline and hook in Portuguese.</p>
       <div class="cta">
         <a class="btn" href="#guia">Open the guide</a>
-        <a class="btn ghost" href="https://github.com/inematds/radar-pautas" target="_blank" rel="noopener">View on GitHub</a>
+        <a class="btn ghost" href="https://github.com/linnoff88-dev/radar-pautas" target="_blank" rel="noopener">View on GitHub</a>
       </div>
     </div>
     <figure><img src="../assets/banner-en.jpg" alt="radar-pautas banner: today’s 6 AI stories to cover, with verified sources"></figure>
@@ -205,7 +205,7 @@
   <div class="step"><div class="b">1</div><div>
     <h3>Download the project</h3>
     <p>This copies the radar to <code>~/projetos/radar-pautas</code> (the <code>~</code> is your personal folder) and opens that folder.</p>
-<pre><span class="k">git clone</span> <span class="s">https://github.com/inematds/radar-pautas</span> ~/projetos/radar-pautas
+<pre><span class="k">git clone</span> <span class="s">https://github.com/linnoff88-dev/radar-pautas</span> ~/projetos/radar-pautas
 <span class="k">cd</span> ~/projetos/radar-pautas</pre>
   </div></div>
 
@@ -220,7 +220,7 @@
 
   <div class="step"><div class="b">3</div><div>
     <h3>Save the stories with an angle in English</h3>
-    <p>Without <code>--dry</code>, the radar saves the files. With <code>--angulos</code>, each story gets a headline, why it matters, a hook (the opening line of a short video), a suggested format, and a word viewers can request in the comments. INEMA uses these formats: <b>r7ex</b> (short vertical reel), <b>explicavideo</b> (explainer video), and <b>carrossel</b> (multi-image post). Without Claude Code, the radar shows <code>aviso: ângulos nêo gerados</code> and saves the stories without an angle. If the stories have no Portuguese headlines, open Claude Code once (with the <code>claude</code> command) to sign in, then run it again.</p>
+    <p>Without <code>--dry</code>, the radar saves the files. With <code>--angulos</code>, each story gets a headline, why it matters, a hook (the opening line of a short video), a suggested format, and a word viewers can request in the comments. ARCKHÉ uses these formats: <b>r7ex</b> (short vertical reel), <b>explicavideo</b> (explainer video), and <b>carrossel</b> (multi-image post). Without Claude Code, the radar shows <code>aviso: ângulos nêo gerados</code> and saves the stories without an angle. If the stories have no Portuguese headlines, open Claude Code once (with the <code>claude</code> command) to sign in, then run it again.</p>
 <pre><span class="k">python3</span> radar.py --angulos</pre>
     <p>If fewer than 3 stories come up (the network is down or it’s a quiet news day), the command ends with an error. Try again later or expand the time window with <code>--horas 48</code>.</p>
   </div></div>
@@ -256,7 +256,7 @@
 
   <div class="step"><div class="b">7</div><div>
     <h3>“Already covered” notice (optional)</h3>
-    <p>The radar checks the last 200 lines of a production log for a line that mentions the same company and at least 2 words from the title. If it finds one, the story gets the notice “We’ve covered something like this.” The path is set in the code as <code>~/projetos/wifi/PRODUCOES-VIDEO.md</code>, INEMA’s file. If it isn’t on your computer, the notice simply won’t appear. To use your own file, change the path on the line that starts with <code>PRODUCOES =</code> in <code>radar.py</code>, and add one line per published video. Only words with 6 or more letters count, and generic words (agent, model, skill, claude, openai, google, release) are ignored. So include the company name and the key words from the original news title (usually in English), as in the example. This triggers the notice for story 1 in the example below.</p>
+    <p>The radar checks the last 200 lines of a production log for a line that mentions the same company and at least 2 words from the title. If it finds one, the story gets the notice “We’ve covered something like this.” The path is set in the code as <code>~/projetos/wifi/PRODUCOES-VIDEO.md</code>, ARCKHÉ’s file. If it isn’t on your computer, the notice simply won’t appear. To use your own file, change the path on the line that starts with <code>PRODUCOES =</code> in <code>radar.py</code>, and add one line per published video. Only words with 6 or more letters count, and generic words (agent, model, skill, claude, openai, google, release) are ignored. So include the company name and the key words from the original news title (usually in English), as in the example. This triggers the notice for story 1 in the example below.</p>
 <pre><span class="c"># example line in the production log</span>
 04/11 · DeepSeek super-agent design autonomous · explicavideo publicado</pre>
 <pre><span class="k">grep</span> -n <span class="s">"^PRODUCOES ="</span> radar.py</pre>
@@ -324,8 +324,8 @@
   <div class="wrap">
     <div class="pill">Python 3 (no dependencies)</div><div class="pill">Public RSS</div><div class="pill">GitHub CLI</div><div class="pill">Claude Code (optional)</div>
     <p style="margin-top:18px">radar-pautas · MIT license ·
-      <a href="https://github.com/inematds/radar-pautas">inematds/radar-pautas</a> ·
-      <a href="https://inema.club">INEMA.CLUB</a></p>
+      <a href="https://github.com/linnoff88-dev/radar-pautas">linnoff88-dev/radar-pautas</a> ·
+      <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
   </div>
 </footer>
 
