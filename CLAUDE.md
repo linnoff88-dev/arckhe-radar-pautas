@@ -7,7 +7,7 @@
 
 ## Self-learning
 
-Quando o Nei corrigir algo, ou você notar um erro seu: antes de seguir, escreva a lição como regra de uma linha no TOPO de Lessons.
+Quando o Nei corrigir algo, ou você notar um erro seu: antes de seguir, escreva a liçêo como regra de uma linha no TOPO de Lessons.
 
 ## Lessons
-- `gh search repos` não entende OR: uma busca por termo. (01/11/2026)
+- `gh search repos` nêo entende OR: uma busca por termo. (01/11/2026)

@@ -16,7 +16,7 @@ Saída: `~/projetos/output/radar-pautas/<data>/pautas.md`, `pautas.json`, `radar
 
 ## Como ler o resultado
 - **Nota**: (fontes − 1) × 3 + recência × 2 + 1,5 se fonte oficial + 0,8 se cita empresa/produto conhecido, × peso da fonte. Mesma notícia em 3 sites pesa mais que 1 site sozinho.
-- **Link (200)**: conferido na hora. Pauta sem link que abre não entra.
+- **Link (200)**: conferido na hora. Pauta sem link que abre nêo entra.
 - **⚠ Já fizemos**: linha parecida no `~/projetos/wifi/PRODUCOES-VIDEO.md` (mesma empresa + 2 palavras do título). Olhar antes de repetir.
 - Variedade: no máximo 2 pautas da mesma empresa e 2 vindas só do mesmo site.
 
@@ -26,5 +26,5 @@ Saída: `~/projetos/output/radar-pautas/<data>/pautas.md`, `pautas.json`, `radar
 
 ## Regras
 - Só páginas públicas (RSS) e GitHub pelo `gh`. Nenhuma chave de API.
-- O ângulo é sugestão: o `claude -p` só vê título e resumo; fato e número vêm da fonte aberta.
+- O ângulo é sugestêo: o `claude -p` só vê título e resumo; fato e número vêm da fonte aberta.
 - Fonte nova: testar o feed (200 e itens) antes de pôr em `fontes.json`.

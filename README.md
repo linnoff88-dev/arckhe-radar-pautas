@@ -1,4 +1,4 @@
-﻿# radar-pautas
+ï»¿# radar-pautas
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -6,15 +6,15 @@
 </div>
 
 
-[![radar-pautas â€” as 6 pautas de IA do dia](guia/assets/banner.jpg)](https://inematds.github.io/radar-pautas/guia/)
+[![radar-pautas ê¢â¬â as 6 pautas de IA do dia](guia/assets/banner.jpg)](https://inematds.github.io/radar-pautas/guia/)
 
-**ðŸ‡§ðŸ‡· PortuguÃªs Â· ðŸ‡ºðŸ‡¸ [English](README.en.md) Â· ðŸ‡ªðŸ‡¸ [EspaÃ±ol](README.es.md)**
+**ê°Å¸â¡Â§ê°Å¸â¡Â· PortuguêÂªs êÂ· ê°Å¸â¡Âºê°Å¸â¡Â¸ [English](README.en.md) êÂ· ê°Å¸â¡Âªê°Å¸â¡Â¸ [EspaêÂ±ol](README.es.md)**
 
-## O que Ã©
+## O que êÂ©
 
-O radar-pautas Ã© um script que lÃª, de uma vez, cerca de 20 sites de notÃ­cias de inteligÃªncia artificial (blogs das empresas, imprensa, Hacker News, Reddit e os projetos que mais ganharam estrelas no GitHub na semana) e devolve as 6 pautas mais quentes das Ãºltimas 24 horas. Serve para quem produz conteÃºdo e precisa decidir rÃ¡pido o assunto do dia. Ele junta a mesma notÃ­cia vinda de vÃ¡rios sites, dÃ¡ uma nota, confere se o link abre, avisa se vocÃª jÃ¡ fez algo parecido e, se pedir, sugere manchete, gancho e formato em portuguÃªs. Precisa de Python 3; o GitHub CLI (`gh`) e o Claude Code sÃ£o opcionais.
+O radar-pautas êÂ© um script que lêÂª, de uma vez, cerca de 20 sites de notêÂ­cias de inteligêÂªncia artificial (blogs das empresas, imprensa, Hacker News, Reddit e os projetos que mais ganharam estrelas no GitHub na semana) e devolve as 6 pautas mais quentes das êÂºltimas 24 horas. Serve para quem produz conteêÂºdo e precisa decidir rêÂ¡pido o assunto do dia. Ele junta a mesma notêÂ­cia vinda de vêÂ¡rios sites, dêÂ¡ uma nota, confere se o link abre, avisa se vocêÂª jêÂ¡ fez algo parecido e, se pedir, sugere manchete, gancho e formato em portuguêÂªs. Precisa de Python 3; o GitHub CLI (`gh`) e o Claude Code sêÂ£o opcionais.
 
-## ðŸ“– Guia de uso
+## ê°Å¸ââ Guia de uso
 
 Guia completo (landing + passo a passo): **https://inematds.github.io/radar-pautas/guia/**
 
@@ -29,38 +29,38 @@ python3 radar.py --angulos      # gravar + manchete/gancho/formato em PT (Claude
 
 Abra `~/projetos/output/radar-pautas/<data>/radar.html` no navegador.
 
-| OpÃ§Ã£o | Faz |
+| OpêÂ§êÂ£o | Faz |
 |---|---|
-| `--horas 48` | janela de tempo (padrÃ£o 24) |
-| `--n 8` | quantas pautas (padrÃ£o 6) |
+| `--horas 48` | janela de tempo (padrêÂ£o 24) |
+| `--n 8` | quantas pautas (padrêÂ£o 6) |
 | `--angulos` | manchete, por que importa, gancho, formato e palavra, pelo `claude -p` (assinatura) |
-| `--sem-github` | sem os repositÃ³rios em alta |
-| `--dry` | sÃ³ imprime |
+| `--sem-github` | sem os repositêÂ³rios em alta |
+| `--dry` | sêÂ³ imprime |
 
-## O processo, do inÃ­cio ao fim
+## O processo, do inêÂ­cio ao fim
 
-ðŸ§  sessÃ£o com o Nei Â· âš™ï¸ script/timer Â· ðŸ¤– `claude -p` (assinatura)
+ê°Å¸Â§Â  sessêÂ£o com o Nei êÂ· ê¢Å¡â¢ê¯Â¸Â script/timer êÂ· ê°Å¸Â¤â `claude -p` (assinatura)
 
 | # | Passo | Comando / o que acontece | Quem |
 |---|---|---|---|
-| 1 | Coleta | `radar.py` lÃª os feeds de `fontes.json` em paralelo (e tenta de novo quando o site pede para esperar) + `gh search repos` | âš™ï¸ |
-| 2 | Junta e dÃ¡ nota | mesma notÃ­cia em vÃ¡rios sites vira um assunto; nota por fontes, recÃªncia, fonte oficial | âš™ï¸ |
-| 3 | Confere | abre o link de cada pauta (sÃ³ entra com 200) e procura parecido no `PRODUCOES-VIDEO.md` | âš™ï¸ |
-| 4 | Ã‚ngulo | `--angulos`: manchete PT, gancho, formato (r7ex/explicavideo/carrossel) e palavra | ðŸ¤– |
-| 5 | Escolha | o Nei escolhe quais pautas viram vÃ­deo ou carrossel | ðŸ§  |
-| 6 | DiÃ¡rio (opcional) | `systemd/radar-pautas.timer` Ã s 07:30 â€” **vem desligado**; ligar sÃ³ com OK | âš™ï¸ |
+| 1 | Coleta | `radar.py` lêÂª os feeds de `fontes.json` em paralelo (e tenta de novo quando o site pede para esperar) + `gh search repos` | ê¢Å¡â¢ê¯Â¸Â |
+| 2 | Junta e dêÂ¡ nota | mesma notêÂ­cia em vêÂ¡rios sites vira um assunto; nota por fontes, recêÂªncia, fonte oficial | ê¢Å¡â¢ê¯Â¸Â |
+| 3 | Confere | abre o link de cada pauta (sêÂ³ entra com 200) e procura parecido no `PRODUCOES-VIDEO.md` | ê¢Å¡â¢ê¯Â¸Â |
+| 4 | êângulo | `--angulos`: manchete PT, gancho, formato (r7ex/explicavideo/carrossel) e palavra | ê°Å¸Â¤â |
+| 5 | Escolha | o Nei escolhe quais pautas viram vêÂ­deo ou carrossel | ê°Å¸Â§Â  |
+| 6 | DiêÂ¡rio (opcional) | `systemd/radar-pautas.timer` êÂ s 07:30 ê¢â¬â **vem desligado**; ligar sêÂ³ com OK | ê¢Å¡â¢ê¯Â¸Â |
 
 ## Fontes
 
-`fontes.json`: OpenAI, Google AI, Google DeepMind, Hugging Face, NVIDIA, Mistral, GitHub Blog, The Verge, TechCrunch, Ars Technica, Wired, The Decoder, MarkTechPost, MIT News, Simon Willison, Hacker News (150+ pontos), r/LocalLLaMA, Tecmundo, Canaltech e Olhar Digital (esses trÃªs filtrados por palavras de IA). Testadas em 01/11/2026.
+`fontes.json`: OpenAI, Google AI, Google DeepMind, Hugging Face, NVIDIA, Mistral, GitHub Blog, The Verge, TechCrunch, Ars Technica, Wired, The Decoder, MarkTechPost, MIT News, Simon Willison, Hacker News (150+ pontos), r/LocalLLaMA, Tecmundo, Canaltech e Olhar Digital (esses trêÂªs filtrados por palavras de IA). Testadas em 01/11/2026.
 
 ## Limites
 
-- Feeds caem de vez em quando (um por rodada Ã© normal); o resultado diz quais ficaram fora.
-- O agrupamento Ã© por palavras do tÃ­tulo: Ã s vezes junta de menos (duas manchetes muito diferentes do mesmo fato).
-- O Ã¢ngulo vÃª sÃ³ tÃ­tulo e resumo: nÃºmero e fato, sempre da fonte aberta.
+- Feeds caem de vez em quando (um por rodada êÂ© normal); o resultado diz quais ficaram fora.
+- O agrupamento êÂ© por palavras do têÂ­tulo: êÂ s vezes junta de menos (duas manchetes muito diferentes do mesmo fato).
+- O êÂ¢ngulo vêÂª sêÂ³ têÂ­tulo e resumo: nêÂºmero e fato, sempre da fonte aberta.
 
-LicenÃ§a: MIT.
+LicenêÂ§a: MIT.
 
 ---
 

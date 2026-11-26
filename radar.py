@@ -3,7 +3,7 @@
 
 Uso:
   python3 radar.py                      # coleta, agrupa, dá nota, confere links → 6 pautas
-  python3 radar.py --dry                # o mesmo, só imprime (não grava)
+  python3 radar.py --dry                # o mesmo, só imprime (nêo grava)
   python3 radar.py --angulos            # + ângulo PT para r7ex/explicavideo/carrossel (claude -p, assinatura)
   python3 radar.py --horas 48 --n 8     # janela e quantidade
   python3 radar.py --sem-github         # sem os repositórios em alta do GitHub
@@ -97,7 +97,7 @@ def ler_feed(fonte):
 
 
 def github_em_alta(dias=7, n=10):
-    """Repositórios novos com mais estrelas. O `gh search` não aceita OR: uma busca por termo, sem repetir."""
+    """Repositórios novos com mais estrelas. O `gh search` nêo aceita OR: uma busca por termo, sem repetir."""
     desde = (datetime.now(timezone.utc) - timedelta(days=dias)).strftime("%Y-%m-%d")
     vistos, repos = set(), []
     for termo in ("llm", "agent", "ai"):
@@ -190,9 +190,9 @@ def link_ok(url):
 def angulos(pautas):
     lista = "\n".join(f"{k}. {p['titulo']} | fontes: {', '.join(p['fontes'])} | {p['resumo'][:240]}" for k, p in enumerate(pautas, 1))
     pedido = f"""Você é o pauteiro do INEMA (canal brasileiro que ensina IA na prática, de graça, para gente comum, sem hype).
-Para cada pauta abaixo, responda em português do Brasil. Use SÓ o que está na pauta; não invente número nem fato.
+Para cada pauta abaixo, responda em português do Brasil. Use SÓ o que está na pauta; nêo invente número nem fato.
 Devolva APENAS um JSON (lista, mesma ordem) com objetos:
-{{"titulo_pt": "manchete em PT, até 70 caracteres", "por_que_importa": "1 frase para quem não é técnico",
+{{"titulo_pt": "manchete em PT, até 70 caracteres", "por_que_importa": "1 frase para quem nêo é técnico",
  "gancho": "frase de abertura de reel, até 12 palavras", "formato": "r7ex" | "explicavideo" | "carrossel",
  "palavra": "palavra para o comentário, 3 a 14 letras"}}
 
@@ -205,7 +205,7 @@ Devolva APENAS um JSON (lista, mesma ordem) com objetos:
         m = re.search(r"\[.*\]", out, re.S)
         dados = json.loads(m.group(0)) if m else []
     except Exception as e:
-        print("aviso: ângulos não gerados:", str(e)[:100], file=sys.stderr)
+        print("aviso: ângulos nêo gerados:", str(e)[:100], file=sys.stderr)
         return
     for p, d in zip(pautas, dados):
         p["angulo"] = d
